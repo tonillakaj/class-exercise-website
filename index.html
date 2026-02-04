@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Student Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">DevLearner</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#login">Student Portal</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Welcome to my Lab</h1>
+        <p>I'm learning how to build the web, one <code>&lt;div&gt;</code> at a time.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="card">Project 1: Calculator</div>
+            <div class="card">Project 2: To-Do List</div>
+            <div class="card">Project 3: Cat Photos</div>
+        </div>
+    </section>
+
+    <section id="login" class="login-zone">
+        <div class="login-box">
+            <h3>Login to See Grades</h3>
+            <input type="text" id="username" placeholder="Username (try: student)">
+            <input type="password" id="password" placeholder="Password (try: 1234)">
+            <button onclick="checkLogin()">Login</button>
+            <p id="message"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
